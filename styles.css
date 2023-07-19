@@ -1,0 +1,110 @@
+
+* {
+  
+    box-sizing: border-box;
+    font-family:'Press Start 2P',cursive;
+    color: white;
+    
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+
+
+h1 {
+    margin: 3rem  1rem;
+    margin-bottom: 5rem;
+    font-size: clamp(1.4rem,5vw,2rem);
+    text-shadow: 3px 3px 0 #787882;
+}
+
+.start-style {
+    cursor: pointer;
+    padding: 0.6em;
+    background-color: #55ff00e9;
+    border-radius:15px;
+    box-shadow: 2px 2px 2px;
+}
+
+.restart-style {
+    cursor: pointer;
+    padding: 0.6em;
+    background-color: #e94545e9;
+    border-radius:15px;
+    box-shadow: 2px 2px 2px; 
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    height: 2.5rem;           
+}
+
+p {
+    text-shadow: 0 3px 0 #00000b; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    margin-top: 7rem;
+}
+
+.row {
+   flex: 1 1;
+   max-width: 200px;
+   min-width: 100px;
+}
+
+.row + .row {
+    margin-left: 1.5rem;
+}
+
+.btn {
+    width:100%;
+    aspect-ratio: 1;
+    margin-bottom: 1.5rem;
+    border-radius: 20%;
+    border: 6px solid rgb(27, 25, 25);
+    box-shadow: 3.5px 3.5px 0 #787882;
+    cursor: pointer;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.game-over {
+    background: red;
+    opacity: 0.8;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+/* Testing 3d button for the start button*/
