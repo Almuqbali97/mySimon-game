@@ -25,7 +25,9 @@ $(".start").on("click", function (e) {
     setTimeout(function(){
         $("#"+chosenColor).removeClass("pressed");  
     },100);
-
+    //calling the sound Function
+       playSound(chosenColor); 
+    
     // calling the check answer function so we can check if the user answer is correct
     checkAnswer (userClickedPattern.length-1);// the user click will start [0], then [1] and so on, we use this number and put it in both gamePattern[] and userClickPattern[]
 });
@@ -72,8 +74,8 @@ function checkAnswer (currentArrayPostion) { // this if statmetn work beacuse ea
                 console.log("correct")
              }
     }else { 
-       
         // in case of wrong asnswer
+        playSound("wrong")
         console.log("wrong");
         level = 0;
         userClickedPattern = [];
@@ -104,7 +106,10 @@ function checkAnswer (currentArrayPostion) { // this if statmetn work beacuse ea
 } 
 
 
-
+function playSound(filePath){
+    var audio = new Audio("./sounds/"+filePath+".mp3");
+    audio.play();
+}
 // my goal for tommorow, store the highest level the user got,(if not possible the previous once),
 // make the game over thing and the possibility to restart the game
 
