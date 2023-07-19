@@ -53,7 +53,7 @@ function nextSequence() {
     var randomButtonIndex = Math.floor(Math.random()*4);
     // the array of the buttons in the html is as following [green , yellow , red , blue]
     // attatching the flash animation to the buttons using the random number for the array index of the buttons
-    $("#"+buttonsIdArray[randomButtonIndex]).fadeIn(100).fadeOut(100).fadeIn(100); // we can do sequnce of animation like this
+    $("#"+buttonsIdArray[randomButtonIndex]).fadeIn(250).fadeOut(250).fadeIn(250); // we can do sequnce of animation like this
     // in order to keep track of the game random pattern we need to store it in an array
     gamePattern.push(buttonsIdArray[randomButtonIndex]);
     // console.log("game pattern "+gamePattern);
